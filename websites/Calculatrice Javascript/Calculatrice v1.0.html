@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Calculator_Windows.ico">
+    <link rel="stylesheet" href="Css Calulatrice.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="Js Calculatrice.js"></script>
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="Title">
+        <center><h2>Calculatrice</h2></center>
+    </div>
+    <div class="Calculatrise">
+        <div class="Affichage">
+            <div><center><input type="text" name="Valeur1" id="Val1" readonly></center></div>
+            <div class="Calcul"><h4 id="CalculSymbol"></h4></div>
+            <div><center><input type="text" name="Valeur2" id="Val2" value="0" readonly></center></div>
+        </div>
+        <div class="Buttons">
+            <div class="lineButton">
+                <button onclick="InsertSymbol('%')">%</button>
+                <button onclick="SqrtResult()">sqrt</button>
+                <button onclick="PowerResult()">x²</button>
+                <button onclick="OneResult()">1/x</button>
+            </div>
+            <div class="lineButton">
+                <button onclick="CleanZone('Val1','',true); CleanZone('Val2','0',true)">C</button>
+                <button onclick="CleanZone('Val2','0',false)">CE</button>
+                <button onclick="BackSpace()">Backspace</button>
+                <button onclick="InsertSymbol('/')">/</button>
+            </div>
+            <div class="lineButton">
+                <button onclick="InsertValue('7')">7</button>
+                <button onclick="InsertValue('8')">8</button>
+                <button onclick="InsertValue('9')">9</button>
+                <button onclick="InsertSymbol('x')">x</button>
+            </div>
+            <div class="lineButton">
+                <button onclick="InsertValue('4')">4</button>
+                <button onclick="InsertValue('5')">5</button>
+                <button onclick="InsertValue('6')">6</button>
+                <button onclick="InsertSymbol('-')">-</button>
+            </div>
+            <div class="lineButton">
+                <button onclick="InsertValue('1')">1</button>
+                <button onclick="InsertValue('2')">2</button>
+                <button onclick="InsertValue('3')">3</button>
+                <button onclick="InsertSymbol('+')">+</button>
+            </div>
+            <div class="lineButton">
+                <button onclick="PlusMoins()">+-</button>
+                <button onclick="InsertValue('0')">0</button>
+                <button onclick="Vergul()">,</button>
+                <button onclick="Calcul()">=</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>This calculator created by : Hammani Farid.</h2>
+    </footer>
+</body>
+</html>
